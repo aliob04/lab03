@@ -39,6 +39,6 @@ public class sorter {
         return arr;
     }
     public static void sort(int[] arr){
-        insertionsort(arr);
+        selectionSort(arr);
     }
 }

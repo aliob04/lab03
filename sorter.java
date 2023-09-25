@@ -5,9 +5,7 @@ import java.io.*;
 public class sorter {
     public static void main(String[] args) {
         int array[] = {1, 2, 3, 4, 5};
-        selectionSort(array);
-        System.out.println(Arrays.toString(array));
-        insertionsort(array);
+        sort(array);
         System.out.println(Arrays.toString(array));
     }
     public static int[] selectionSort ( int arr[]){
@@ -39,5 +37,8 @@ public class sorter {
             arr[j + 1] = key;
         }
         return arr;
+    }
+    public static void sort(int[] arr){
+        insertionsort(arr);
     }
 }
